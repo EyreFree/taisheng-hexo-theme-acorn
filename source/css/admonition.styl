@@ -1,0 +1,51 @@
+//
+// Hexo-admonition
+// https://github.com/lxl80/hexo-admonition
+//
+notes = {
+  info : info-color
+  todo : info-color
+  warning :   warning-color
+  attention : warning-color
+  caution :   warning-color
+  failure : danger-color
+  missing : danger-color
+  fail :    danger-color
+  error:    danger-color
+}
+
+.admonition 
+  margin: spacer 0
+  padding: spacer
+  overflow: hidden
+  page-break-inside: avoid
+  border-left: border-width * 3 solid success-color
+  border-radius: border-radius-value
+  background-color: light-color
+  .admonition-title
+    position: relative
+    margin: spacer * -1 !important
+    margin-bottom: spacer !important
+    padding: spacer * 0.5
+    padding-left: spacer * 3
+    background-color:rgba(success-color, .1)
+    font-weight: 500
+    color: success-color
+    &::before
+      content: ''
+      position: absolute
+      left: spacer
+      center-y()
+      rounded-circle(spacer)
+      background-color: success-color
+  p
+    margin: 0 !important
+
+for name,value in notes
+  .admonition.{name}
+    border-color: value
+    .admonition-title
+      background-color: rgba(value, .1)
+      color: value
+      &::before
+        background-color: value

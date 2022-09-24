@@ -9,6 +9,9 @@
 				<img class="logo lazyload" data-src="<%- url_for(theme.brand) %>" alt="<%= config.title %>" role="img">
 			</a>
 			<%- partial('_partial/menu', {class_name: 'main-nav'}) %>
+			<div class="search-input">
+			<%- partial('_partial/search', {wrapStyle: '', inputStyle: ''}) %>
+			</div>
 		</nav>
 		<a id="mobile-nav-toggle">
 			<span class="mobile-nav-toggle-bar"></span>
