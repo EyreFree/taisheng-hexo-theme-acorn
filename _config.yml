@@ -1,13 +1,14 @@
 # Header
 menu:
   首页: /
-  画廊: /gallery
-  案例: /stories
-  新闻: /archives
+  风采: /gallery
+  #活动: /stories
+  产品: /archives
   关于: /about
+  English: javascript:window.location.href='https://en.taishengpackaging.com'
 
 # Content
-excerpt_link: 阅读全文
+excerpt_link: 查看详情
 
 # MIIT ICP/IP/DOMAIN
 beian: 
@@ -18,7 +19,8 @@ beian:
 # Miscellaneous
 favicon: /images/favicon.ico
 webclip: /images/webclip
-brand:   /images/brand.svg
+brand:   /images/brand.png
+icon:   /images/icon.png
 
 # Jumbotron video & Hero image & Swiper
 ## Jumbotron video
@@ -39,11 +41,11 @@ toc: true
 
 # Slogan
 slogan: 
-  primary: 焕然一新
-  secondary: Acorn 是一颗适用于中小企业的 Hexo 主题
-  archives: 汇聚热点话题 打造创新思路
-  pages: 运维更智能 部署更方便 应用更便捷
-  posts: 实践见真知既是最好的解释
+  primary: 泰晟制罐
+  secondary: 铸就金属品质 容纳无限可能
+  archives: 精工泰晟 桶装精彩
+  pages: 塑造金属 承载未来
+  posts: 金属匠心 容器典范
 
 # Library
 libs:
